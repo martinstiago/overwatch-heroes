@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  app:
+    image: martinstiago/overwatch-heroes:v1
+    build:
+      context: .
+    command: bash -c "rm -f tmp/server.pid && rails s --pid=/tmp/server.pid"
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3000:3000
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
