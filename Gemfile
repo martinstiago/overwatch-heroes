@@ -13,6 +13,8 @@ gem 'rails'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'rubocop-rspec'
@@ -26,5 +28,8 @@ group :development do
 end
 
 group :test do
+  gem 'database_cleaner'
   gem 'mongoid-rspec'
+  gem 'simplecov', require: false
+  gem 'webmock'
 end

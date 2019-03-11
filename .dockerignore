@@ -4,3 +4,5 @@
 /.bundle
 /public/assets
 /yarn-error.log
+/coverage
+.DS_Store
