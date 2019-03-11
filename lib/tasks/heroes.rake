@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'net/http'
+
 namespace :heroes do
   task persist: :environment do
     base_url = 'https://overwatch-api.net/api/v1/'
