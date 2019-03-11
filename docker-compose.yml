@@ -8,6 +8,8 @@ services:
     command: bash -c "rm -f tmp/server.pid && rails s --pid=/tmp/server.pid"
     volumes:
       - ./:/usr/src/app
+    environment:
+      - MONGO_HOST=mongodb
     ports:
       - 3000:3000
 
