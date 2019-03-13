@@ -1,5 +1,7 @@
 # Overwatch Heroes
 
+[![CircleCI](https://circleci.com/gh/martinstiago/overwatch-heroes.svg?style=svg)](https://circleci.com/gh/martinstiago/overwatch-heroes)
+
 Administrative Panel and API with information about Overwatch heroes and their abilities.
 
 To run the application locally

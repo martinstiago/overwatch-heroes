@@ -33,6 +33,7 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'mongoid-rspec'
+  gem 'rspec_junit_formatter'
   gem 'simplecov', require: false
   gem 'webmock'
 end

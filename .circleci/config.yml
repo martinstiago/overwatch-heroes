@@ -1,0 +1,31 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.1
+      - image: circleci/mongo:latest
+    steps:
+      - checkout
+      - run:
+          name: Update Bundler
+          command: gem update bundler
+      - restore_cache:
+          keys:
+            - rails-bundle-{{ checksum "Gemfile.lock" }}
+            - rails-bundle-
+      - run:
+          name: Bundle Install
+          command: bundle check || (bundle install --path vendor/bundle && bundle clean)
+      - save_cache:
+          key: rails-bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Rubocop
+          command: bundle exec rubocop
+      - run:
+          name: Rspec
+          command: bundle exec rspec --format progress --format RspecJunitFormatter --out test_results/rspec.xml
+      - store_test_results:
+          path: test_results
