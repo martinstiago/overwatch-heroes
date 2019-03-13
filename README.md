@@ -1,24 +1,21 @@
-# README
+# Overwatch Heroes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Administrative Panel and API with information about Overwatch heroes and their abilities.
 
-Things you may want to cover:
+To run the application locally
 
-* Ruby version
+Without docker:
+```
+bundle install
+rails heroes:persist
+rails s
+```
 
-* System dependencies
+With docker:
+```
+docker-compose up -d
+docker-compose run app rails heroes:persist
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Administrative Panel URL](https://martinstiago-overwatch-heroes.herokuapp.com/)   
+[API URL](https://martinstiago-overwatch-heroes.herokuapp.com/api)
