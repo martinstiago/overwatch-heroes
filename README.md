@@ -1,6 +1,7 @@
 # Overwatch Heroes
 
-[![CircleCI](https://circleci.com/gh/martinstiago/overwatch-heroes.svg?style=svg)](https://circleci.com/gh/martinstiago/overwatch-heroes)
+[![CircleCI](https://circleci.com/gh/martinstiago/overwatch-heroes.svg?style=svg)](https://circleci.com/gh/martinstiago/overwatch-heroes) 
+[![codecov](https://codecov.io/gh/martinstiago/overwatch-heroes/branch/master/graph/badge.svg)](https://codecov.io/gh/martinstiago/overwatch-heroes)
 
 Administrative Panel and API with information about Overwatch heroes and their abilities.
 

@@ -31,6 +31,7 @@ group :development do
 end
 
 group :test do
+  gem 'codecov', require: false
   gem 'database_cleaner'
   gem 'mongoid-rspec'
   gem 'rspec_junit_formatter'
