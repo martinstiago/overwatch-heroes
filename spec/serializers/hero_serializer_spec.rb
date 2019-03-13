@@ -8,6 +8,7 @@ RSpec.describe HeroSerializer, type: :serializer do
   describe '#serialized_json' do
     subject(:hero_hash) { JSON.parse(described_class.new(hero).serialized_json, symbolize_names: true) }
 
+    it { expect(BSON::ObjectId.from_string(hero_hash[:data][:id])).to eq(hero.id) }
     it { expect(hero_hash[:data][:attributes][:name]).to eq(hero.name) }
     it { expect(hero_hash[:data][:attributes][:real_name]).to eq(hero.real_name) }
     it { expect(hero_hash[:data][:attributes][:health]).to eq(hero.health) }

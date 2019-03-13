@@ -2,6 +2,5 @@
 
 class AbilitySerializer
   include FastJsonapi::ObjectSerializer
-
   attributes :name, :description, :is_ultimate
 end

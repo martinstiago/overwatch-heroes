@@ -18,6 +18,9 @@ Metrics/BlockLength:
 Rails:
   Enabled: true
 
+RSpec/NestedGroups:
+  Max: 5
+
 Style/Documentation:
   Exclude:
     - app/**/*
