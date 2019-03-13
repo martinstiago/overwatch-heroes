@@ -7,9 +7,12 @@ ruby '2.6.1'
 
 gem 'bootsnap', require: false
 gem 'fast_jsonapi'
+gem 'kaminari-mongoid'
 gem 'mongoid'
 gem 'puma'
 gem 'rails'
+gem 'rails_admin'
+gem 'turbolinks'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

@@ -1,6 +1,6 @@
 FROM ruby:2.6.1
 
-RUN apt-get update && apt-get install -y mongodb
+RUN apt-get update && apt-get install -y mongodb nodejs
 
 RUN gem update bundler
 
