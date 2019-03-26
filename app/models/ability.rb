@@ -8,5 +8,5 @@ class Ability
   field :description, type: String
   field :is_ultimate, type: Boolean
 
-  belongs_to :hero
+  belongs_to :hero, index: true
 end
