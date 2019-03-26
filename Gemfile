@@ -3,12 +3,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '2.6.2'
 
 gem 'fast_jsonapi'
 gem 'kaminari-mongoid'
 gem 'mongoid'
-gem 'puma'
+gem 'puma', '3.12.0'
 gem 'rails'
 gem 'rails_admin'
 gem 'turbolinks'

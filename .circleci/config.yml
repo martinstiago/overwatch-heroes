@@ -5,8 +5,8 @@ orbs:
 executors:
   ruby-mongo:
     docker:
-      - image: circleci/ruby:2.6.1
-      - image: circleci/mongo:latest
+      - image: circleci/ruby:2.6.2
+      - image: circleci/mongo:4.0.7
 jobs:
   build:
     executor: ruby-mongo
