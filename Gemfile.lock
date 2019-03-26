@@ -47,8 +47,6 @@ GEM
     arel (9.0.0)
     ast (2.4.0)
     bindex (0.5.0)
-    bootsnap (1.4.1)
-      msgpack (~> 1.0)
     bson (4.4.2)
     builder (3.2.3)
     byebug (11.0.0)
@@ -144,7 +142,6 @@ GEM
       mongoid (>= 3.1)
       mongoid-compatibility (>= 0.5.1)
       rspec (~> 3.3)
-    msgpack (1.2.9)
     nested_form (0.3.2)
     nio4r (2.3.1)
     nokogiri (1.10.1)
@@ -298,7 +295,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap
   byebug
   codecov
   database_cleaner

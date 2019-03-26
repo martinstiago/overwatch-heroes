@@ -5,7 +5,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
-gem 'bootsnap', require: false
 gem 'fast_jsonapi'
 gem 'kaminari-mongoid'
 gem 'mongoid'

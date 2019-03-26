@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Heroes::PersistanceService, type: :service do
+RSpec.describe PersistanceService, type: :service do
   let(:heroes_url) { 'https://overwatch-api.net/api/v1/hero' }
   let(:abilities_url) { 'https://overwatch-api.net/api/v1/ability' }
   let(:abilities_url_page2) { 'https://overwatch-api.net/api/v1/ability?page=2' }

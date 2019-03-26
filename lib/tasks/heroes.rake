@@ -2,6 +2,6 @@
 
 namespace :heroes do
   task persist: :environment do
-    Heroes::PersistanceService.new.persist
+    PersistanceService.new.persist
   end
 end

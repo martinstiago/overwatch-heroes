@@ -1,8 +1,6 @@
+/.bundle
 /log/*
 /tmp/*
-/node_modules
-/.bundle
-/public/assets
-/yarn-error.log
 /coverage
+.byebug_history
 .DS_Store
