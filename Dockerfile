@@ -1,6 +1,13 @@
-FROM ruby:2.6.2
+FROM ruby:2.6.2-alpine
 
-RUN apt-get update && apt-get install -y mongodb nodejs
+RUN apk add --no-cache \
+  bash \
+  build-base \
+  libxml2-dev \
+  libxslt-dev \
+  mongodb \
+  nodejs \
+  tzdata
 
 RUN gem update bundler
 
