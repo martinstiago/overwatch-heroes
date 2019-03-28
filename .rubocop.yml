@@ -5,7 +5,6 @@ AllCops:
   Exclude:
     - vendor/**/*
     - bin/**/*
-    - node_modules/**/*
 
 Metrics/LineLength:
   Max: 110

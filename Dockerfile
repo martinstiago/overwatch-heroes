@@ -6,7 +6,6 @@ RUN apk add --no-cache \
   libxml2-dev \
   libxslt-dev \
   mongodb \
-  nodejs \
   tzdata
 
 RUN gem update bundler

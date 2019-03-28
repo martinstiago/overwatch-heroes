@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/martinstiago/overwatch-heroes/branch/master/graph/badge.svg)](https://codecov.io/gh/martinstiago/overwatch-heroes)
 [![Maintainability](https://api.codeclimate.com/v1/badges/fdf5a610be62ee72d41d/maintainability)](https://codeclimate.com/github/martinstiago/overwatch-heroes/maintainability)
 
-Administrative Panel and API with information about Overwatch heroes and their abilities.
+API with information about Overwatch heroes and their abilities.
 
 To run the application locally
 
@@ -21,5 +21,4 @@ docker-compose up -d
 docker-compose run app rails heroes:persist
 ```
 
-[Administrative Panel URL](https://martinstiago-overwatch-heroes.herokuapp.com/)   
-[API URL](https://martinstiago-overwatch-heroes.herokuapp.com/api)
+[Application URL](https://martinstiago-overwatch-heroes.herokuapp.com)
