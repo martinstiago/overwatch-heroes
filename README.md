@@ -11,14 +11,14 @@ To run the application locally
 Without docker:
 ```
 bundle install
-rails heroes:persist
+rails persist:heroes
 rails s
 ```
 
 With docker:
 ```
 docker-compose up -d
-docker-compose run app rails heroes:persist
+docker-compose run app rails persist:heroes
 ```
 
 [Application URL](https://martinstiago-overwatch-heroes.herokuapp.com)
